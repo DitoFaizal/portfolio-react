@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: Inter, system-ui, sans-serif;
+    background: linear-gradient(180deg, #0f172a, #020617);
+    color: #e5e7eb;
+  }
+  
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  padding: 16px;
+  list-style: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #333;
+}
+
+.navbar li.active a {
+  color: #aa1a00;
+}
+
+/* SECTION */
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 100px 20px;
+  scroll-margin-top: 80px;
+  
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero h1 span {
+  color: #aa1a00;
+}
+
+.subtitle {
+  max-width: 600px;
+  margin: 16px 0 32px;
+  opacity: 0.85;
+}
+
+/* BUTTON */
+.cta {
+  display: flex;
+  gap: 16px;
+}
+
+.btn {
+  padding: 12px 26px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.primary {
+  background: #aa1a00;
+  color: white;
+}
+
+.outline {
+  border: 2px solid #aa1a00;
+  color: #aa1a00;
+}
+
+/* PROJECTS */
+.projects {
+  display: grid;
+  gap: 24px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+  
+
+.card span {
+  display: block;
+  margin-top: 10px;
+  color: #aa1a00;
+  font-size: 14px;
+}
+
+/* CONTACT */
+.contact {
+  display: flex;
+  gap: 20px;
+}
+
+.contact a {
+  font-weight: 600;
+  color: #aa1a00;
+  text-decoration: none;
+}

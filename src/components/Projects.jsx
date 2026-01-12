@@ -1,42 +1,27 @@
 export default function Projects() {
-    return (
-      <section>
-        <h2>Projects</h2>
-  
-        <div className="projects">
-          {/* Project 1 */}
-          <div className="card">
-            <img src="/projects/absensi.png" alt="Attendance System" />
-            <h3>Employee Attendance System</h3>
-            <p>
-              Web-based attendance system with face recognition and reporting
-              features for employees.
-            </p>
-            <span>React • PHP • MySQL</span>
-          </div>
-  
-          {/* Project 2 */}
-          <div className="card">
-            <img src="/projects/inventory.png" alt="Inventory System" />
-            <h3>Inventory Management System</h3>
-            <p>
-              Inventory tracking system with stock monitoring and transaction
-              reports.
-            </p>
-            <span>JavaScript • PHP • MySQL</span>
-          </div>
-  
-          {/* Project 3 */}
-          <div className="card">
-            <img src="/projects/portfolio.png" alt="Portfolio Website" />
-            <h3>Personal Portfolio Website</h3>
-            <p>
-              Modern personal portfolio built with React and GSAP animations.
-            </p>
-            <span>React • GSAP</span>
-          </div>
+  return (
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div className="projects">
+        <div className="card">
+          <h3>Attendance System</h3>
+          <p>Face recognition attendance app using React & backend integration.</p>
+          <span>React • API • MySQL</span>
         </div>
-      </section>
-    );
-  }
-  
+
+        <div className="card">
+          <h3>Ship Repair Estimation</h3>
+          <p>Cost estimation system with Excel export and hierarchy logic.</p>
+          <span>PHP • Excel • SQL</span>
+        </div>
+
+        <div className="card">
+          <h3>Inventory Dashboard</h3>
+          <p>Internal dashboard for tracking materials and reports.</p>
+          <span>React • Charts</span>
+        </div>
+      </div>
+    </section>
+  );
+}
